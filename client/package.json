@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,16 +20,15 @@
     "react-loading-skeleton": "^3.1.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.2",
-    "react-scripts": "5.0.1",
     "react-select": "^5.7.0",
     "reactstrap": "^9.1.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Tests need to be configured for Vite (e.g., with Vitest)\""
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^7.0.0"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.10"
   }
 }
